@@ -3,7 +3,7 @@ import streamlit as st
 from sklearn.linear_model import LogisticRegression
 from joblib import load
 
-with open("../artifacts/model_regression.joblib", "rb") as f:
+with open("artifacts/model_regression.joblib", "rb") as f:
     predictive_model = load(f)
 
 

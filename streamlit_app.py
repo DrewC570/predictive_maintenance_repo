@@ -9,6 +9,8 @@ with open("artifacts/model_regression.joblib", "rb") as f:
 
 st.title('Predictive regression model')
 
+st.markdown('set the features below as you wish and receive a prediction about the resulting failure status')
+
 voltage = st.slider('select voltage', min_value=97.333603782359, max_value=255.124717259791)
 rotation = st.slider('select rotation', min_value=138.432075304341, max_value=695.020984403396)
 pressure = st.slider('select pressure', min_value=51.2371057734253, max_value=185.951997730866)
